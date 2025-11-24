@@ -1,0 +1,4 @@
+name: multi_agent_test_tasks
+target: src.tasks.base.Tasks
+params:
+  task_type: multi_agent

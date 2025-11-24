@@ -1,0 +1,6 @@
+name: alfworld_consistency
+target: src.utils.environment.alfworld.env.AlfworldEnv
+cfg:
+  alfworld_config_path: src/utils/environment/alfworld/alfworld_consistency_config.yaml
+  num_tasks: 10
+

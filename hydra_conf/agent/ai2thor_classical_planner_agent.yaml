@@ -1,0 +1,7 @@
+name: ai2thor_classical_planner_agent
+target: src.agent.single_agent.classical_planner.agent.ClassicalPlannerAgent
+params:
+  env_target: src.utils.environment.ai2thor.env.AI2ThorEnv
+  react_action_schemas_target: src.utils.environment.ai2thor.action_schemas.AI2THOR_ACTION_SCHEMAS_0
+  pddl_domain_path: src/utils/environment/ai2thor/ai2thor_domain_0.pddl
+  solver: fast_downward

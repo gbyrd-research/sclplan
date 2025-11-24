@@ -1,0 +1,17 @@
+name: alfworld_cala
+target: src.agent.single_agent.CALA.agent.CALA
+params:
+  llm: gpt-4o-mini # llama3.1 gpt-4-o-mini OR gpt-4o
+  use_classical_planner: true
+  use_precondition_verification: true
+  env_target: src.utils.environment.alfworld.env.AlfworldEnv
+  react_action_schemas_target: src.utils.environment.alfworld.action_schemas.ALFWORLD_ACTION_SCHEMAS_0
+  pddl_domain_path: src/utils/environment/alfworld/alfworld_domain.pddl
+  solver: lapkt
+  max_planning_steps: 25
+  results_dir: alfworld_cala_experiment_gpt_4o
+  llm_kwargs:
+    temperature: 0
+    top_p: 0.00001
+    seed: 42
+    top_k: 1

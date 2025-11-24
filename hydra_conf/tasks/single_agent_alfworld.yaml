@@ -1,0 +1,6 @@
+name: single_agent_alfworld
+target: src.tasks.alfworld.tasks.AlfworldTasks
+params:
+  task_type: single_agent
+  num_tasks: 134
+

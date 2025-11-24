@@ -1,0 +1,6 @@
+name: alfworld
+target: src.utils.environment.alfworld.env.AlfworldEnv
+cfg:
+  alfworld_config_path: src/utils/environment/alfworld/alfworld/configs/base_config.yaml
+  num_tasks: 134
+

@@ -1,0 +1,6 @@
+name: consistency_alfworld
+target: src.tasks.alfworld.tasks.AlfworldTasks
+params:
+  task_type: consistency
+  num_tasks: 10
+

@@ -1,0 +1,52 @@
+[
+   {
+      "scene": "trial_T20190909_102644_926781",
+      "task_name": "pick_cool_then_place_in_recep-Tomato-None-Microwave-10",
+      "task_natural_language": "Your task is to: put a cool tomato in microwave."
+   },
+   {
+      "scene": "trial_T20190908_205204_244321",
+      "task_name": "pick_and_place_simple-Vase-None-Safe-219",
+      "task_natural_language": "Your task is to: put a vase in safe."
+   },
+   {
+      "scene": "trial_T20190908_010306_215435",
+      "task_name": "pick_two_obj_and_place-PepperShaker-None-Drawer-10",
+      "task_natural_language": "Your task is to: put two peppershaker in drawer."
+   },
+   {
+      "scene": "trial_T20190907_004404_604165",
+      "task_name": "pick_and_place_simple-SoapBottle-None-Toilet-424",
+      "task_natural_language": "Your task is to: put a soapbottle in toilet."
+   },
+   {
+      "scene": "trial_T20190907_004351_281384",
+      "task_name": "pick_and_place_simple-SoapBottle-None-Toilet-424",
+      "task_natural_language": "Your task is to: put a soapbottle in toilet."
+   },
+   {
+      "scene": "trial_T20190907_083346_800823",
+      "task_name": "pick_heat_then_place_in_recep-Cup-None-Cabinet-10",
+      "task_natural_language": "Your task is to: put a hot cup in cabinet."
+   },
+   {
+      "scene": "trial_T20190907_080800_275989",
+      "task_name": "pick_clean_then_place_in_recep-Spatula-None-Drawer-10",
+      "task_natural_language": "Your task is to: clean some spatula and put it in drawer."
+   },
+   {
+      "scene": "trial_T20190909_121710_650938",
+      "task_name": "pick_cool_then_place_in_recep-Mug-None-Cabinet-10",
+      "task_natural_language": "Your task is to: cool some mug and put it in cabinet."
+   },
+   {
+      "scene": "trial_T20190908_114656_768805",
+      "task_name": "pick_cool_then_place_in_recep-Pan-None-CounterTop-10",
+      "task_natural_language": "Your task is to: cool some pan and put it in countertop."
+   },
+   {
+      "scene": "trial_T20190907_074045_109439",
+      "task_name": "pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424",
+      "task_natural_language": "Your task is to: put a clean soapbar in countertop."
+   }
+]

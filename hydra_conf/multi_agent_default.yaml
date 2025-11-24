@@ -1,0 +1,39 @@
+defaults:
+  - ai2thor_tool_engine: default
+  - multi_agent: master_planner
+  - agent: react_agent
+  - tasks: multi_agent
+  - _self_
+
+#################################################################################
+# NOTE: you can modify these configs
+
+debug: true # set to false when running experiments
+experiment_name: default_experiment_name # name of your hydra output folder. useful for organizing experiments
+
+#################################################################################
+
+#################################################################################
+# NOTE: these configs are temporarily not used
+
+# scenarios_json_file: scenarios/scenarios_json_files/kitchen_test_scenarios.json
+
+# predicate building configs
+# debug_predicate_testing: False
+# relevancy_filter_llm_model: gpt-4o-mini # gpt-4o | gpt-4o-mini
+# relevancy_filter_template_id: 4
+# generate_predicates_llm_model: gpt-4o-mini # gpt-4o | gpt-4o-mini
+# generate_predicates_template_id: 6
+#################################################################################
+
+#################################################################################
+# NOTE: DO NOT CHANGE THE BELOW
+base_exp_save_dir: ./outputs/${experiment_name}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+hydra:
+  verbose: true
+  run:
+    dir: ${base_exp_save_dir}
+#################################################################################
+
+

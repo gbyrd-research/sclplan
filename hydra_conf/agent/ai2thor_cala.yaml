@@ -1,0 +1,13 @@
+name: ai2thor_cala
+target: src.agent.single_agent.CALA.agent.CALA
+params:
+  llm: gpt-4o-mini # llama3.1 gpt-4-o-mini OR gpt-4o
+  use_classical_planner: true
+  use_precondition_verification: true
+  env_target: src.utils.environment.ai2thor.env.AI2ThorEnv
+  react_action_schemas_target: src.utils.environment.ai2thor.action_schemas.AI2THOR_ACTION_SCHEMAS_0
+  pddl_domain_path: src/utils/environment/ai2thor/ai2thor_domain_0.pddl
+  solver: fast_downward
+  max_planning_steps: 40
+  results_dir: ai2thor_cala_experiment_gpt_4o
+  human_control_for_debugging: false

@@ -1,0 +1,4 @@
+name: ai2thor
+target: src.utils.environment.ai2thor.env.AI2ThorEnv
+cfg:
+  run_headless: False

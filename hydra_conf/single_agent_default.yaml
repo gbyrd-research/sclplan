@@ -1,0 +1,23 @@
+defaults:
+  - agent: alfworld_cala
+  - env: alfworld
+  - tasks: single_agent_alfworld
+  - _self_
+
+#################################################################################
+# NOTE: you can modify these configs
+
+experiment_type: general
+consistency_run_idx: None
+experiment_name: default_experiment_name
+
+#################################################################################
+# NOTE: DO NOT CHANGE THE BELOW
+base_exp_save_dir: ./outputs/${experiment_name}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+hydra:
+  verbose: true
+  run:
+    dir: ${base_exp_save_dir}
+#################################################################################
+

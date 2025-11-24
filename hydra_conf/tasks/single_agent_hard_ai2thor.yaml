@@ -1,0 +1,4 @@
+name: single_agent_ai2thor
+target: src.tasks.ai2thor.tasks.AI2ThorTasks
+params:
+  task_type: single_agent_hard

@@ -1,0 +1,8 @@
+name: ai2thor_react_agent
+target: src.agent.single_agent.react.agent.ReactAgent
+params:
+  llm: llama3.1 # gpt-4-o-mini OR gpt-4-o-mini
+  env_target: src.utils.environment.ai2thor.env.AI2ThorEnv
+  react_action_schemas_target: src.utils.environment.ai2thor.action_schemas.AI2THOR_ACTION_SCHEMAS_0
+  max_planning_steps: 25 # number of planning iterations to complete a single task
+

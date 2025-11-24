@@ -1,0 +1,39 @@
+name: ai2thor_llmdp
+target: src.agent.single_agent.LLM_DP.agent.LLMDPAgent
+params:
+  llm: gpt-4o-mini # llama3.1 gpt-4-o-mini OR gpt-4o
+  env_target: src.utils.environment.ai2thor.env.AI2ThorEnv
+  react_action_schemas_target: src.utils.environment.ai2thor.action_schemas.AI2THOR_ACTION_SCHEMAS_0
+  pddl_domain_path: src/utils/environment/ai2thor/ai2thor_domain_0.pddl
+  solver: lapkt
+  max_planning_steps: 25
+  results_dir:
+
+  sample: llm # or random
+  top_n: 3
+  random_fallback: True
+  temperature: 0.0
+
+
+
+
+  # openai_api_key: str
+  # alfworld_data_path: str = "alfworld/data"
+  # alfworld_config_path: str = "alfworld/configs"
+  # pddl_dir: str = "pddl"
+  # pddl_domain_file: str = "alfworld_domain.pddl"
+  # planner_solver: Literal["bfs_f", "ff"] = "bfs_f"
+  # planner_timeout: int = 30
+  # planner_cpu_count: int = 4
+  # top_n: int = 3
+  # platform: Literal["linux/amd64", "linux/arm64"] = "linux/arm64"
+  # output_dir: str = "output"
+  # seed: int = 42
+  # name: str = "llmdp"
+  # llm_model: str = "gpt-4o-mini"
+  # sample: Literal["llm", "random"] = (
+  #     "llm"  # whether to use LLM to instantiate beliefs
+  # )
+  # use_react_chat: bool = False  # activate ReAct baseline
+  # random_fallback: bool = True  # activate random fallback
+  # temperature: float = 0.0  # temperature for LLM sampling

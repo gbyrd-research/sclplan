@@ -1,0 +1,11 @@
+name: master_planner_agent
+target: src.agent.multi_agent.master_planner.master_planner.MasterPlanner
+cfg:
+  llm: llama3 # gpt-4-o OR llama3 OR gpt-3.5-turbo
+  max_planning_steps: 10 # number of planning iterations to complete a single task
+  template: 1
+
+  llm_agent_cfg: # change the planning method for the LLM
+    name: react
+
+  

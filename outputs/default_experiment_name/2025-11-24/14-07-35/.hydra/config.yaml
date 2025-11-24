@@ -1,0 +1,34 @@
+agent:
+  name: alfworld_cala
+  target: src.agent.single_agent.CALA.agent.CALA
+  params:
+    llm: llama8b
+    use_classical_planner: true
+    use_precondition_verification: true
+    env_target: src.utils.environment.alfworld.env.AlfworldEnv
+    react_action_schemas_target: src.utils.environment.alfworld.action_schemas.ALFWORLD_ACTION_SCHEMAS_0
+    pddl_domain_path: src/utils/environment/alfworld/alfworld_domain.pddl
+    solver: lapkt
+    max_planning_steps: 25
+    results_dir: experiments/alfworld/general_low_temp/llama8b/cala
+    llm_kwargs:
+      temperature: 0
+      top_p: 0.0001
+      seed: 42
+      top_k: 1
+env:
+  name: alfworld
+  target: src.utils.environment.alfworld.env.AlfworldEnv
+  cfg:
+    alfworld_config_path: src/utils/environment/alfworld/alfworld/configs/base_config.yaml
+    num_tasks: 134
+tasks:
+  name: single_agent_alfworld
+  target: src.tasks.alfworld.tasks.AlfworldTasks
+  params:
+    task_type: single_agent
+    num_tasks: 134
+experiment_type: general
+consistency_run_idx: None
+experiment_name: default_experiment_name
+base_exp_save_dir: ./outputs/${experiment_name}/${now:%Y-%m-%d}/${now:%H-%M-%S}

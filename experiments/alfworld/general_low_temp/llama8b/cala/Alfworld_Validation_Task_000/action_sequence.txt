@@ -1,2 +1,0 @@
-SearchForObject({'target_object_type': 'desk'}) - react
-SearchForObject({'target_object_type': 'desklamp'}) - react
